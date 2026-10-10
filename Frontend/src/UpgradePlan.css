@@ -1,0 +1,152 @@
+.upgradeOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.upgradePanel {
+    width: 100%;
+    max-width: 800px;
+    padding: 28px;
+    border: 1px solid #414141;
+    border-radius: 18px;
+    background: #222;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.upgradeHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.upgradeHeader h2 {
+    margin: 8px 0;
+    font-size: 25px;
+}
+
+.upgradeHeader p,
+.planDescription {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.upgradeEyebrow {
+    color: #b8b8b8;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.upgradeHeader>button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.planGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.planCard {
+    position: relative;
+    padding: 22px;
+    border: 1px solid #444;
+    border-radius: 14px;
+    background: #292929;
+    box-sizing: border-box;
+}
+
+.premiumPlanCard {
+    border-color: #777;
+}
+
+.planBadge {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: #414141;
+    color: white;
+    font-size: 11px;
+}
+
+.planCard h3 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.planPrice {
+    margin: 15px 0 8px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.planPrice span {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.planCard ul {
+    min-height: 105px;
+    padding-left: 0;
+    list-style: none;
+    line-height: 2.2;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.planButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #171717;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.secondaryPlanButton {
+    background: #414141;
+    color: white;
+}
+
+.upgradeNote {
+    margin: 22px 0 0;
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .upgradePanel {
+        padding: 20px;
+    }
+
+    .upgradeHeader h2 {
+        font-size: 21px;
+    }
+
+    .planGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .planCard ul {
+        min-height: auto;
+    }
+}

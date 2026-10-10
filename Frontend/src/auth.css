@@ -1,0 +1,128 @@
+.authPage {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: #212121;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.authCard {
+    width: 100%;
+    max-width: 410px;
+    padding: 32px;
+    border: 1px solid #3a3a3a;
+    border-radius: 18px;
+    background: #292929;
+    box-sizing: border-box;
+}
+
+.authLogo {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+    border-radius: 14px;
+    background: #f5f5f5;
+    color: #171717;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.authCard h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.authSubtitle {
+    margin: 10px 0 26px;
+    color: #b8b8b8;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.authCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.authLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #e5e5e5;
+    font-size: 13px;
+}
+
+.authLabel input {
+    width: 100%;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    border: 1px solid #484848;
+    border-radius: 9px;
+    outline: none;
+    background: #1f1f1f;
+    color: #fff;
+    font-size: 14px;
+}
+
+.authLabel input:focus {
+    border-color: #999;
+}
+
+.authSubmit {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #f5f5f5;
+    color: #171717;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.authSubmit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.authError {
+    margin: 0;
+    color: #ff8f8f;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.authSwitch {
+    margin: 23px 0 0;
+    color: #b8b8b8;
+    text-align: center;
+    font-size: 13px;
+}
+
+.authSwitch button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .authCard {
+        padding: 25px 20px;
+    }
+
+    .authCard h1 {
+        font-size: 22px;
+    }
+}
